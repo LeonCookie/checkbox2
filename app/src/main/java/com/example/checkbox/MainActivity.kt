@@ -58,7 +58,8 @@ class MainActivity : AppCompatActivity() {
             if (isChecked) {
                 result.append("\nMleko 3zł")
                 totalAmount += 3
-
+                result.append("\nRazem " + totalAmount + "zł")
+                Toast.makeText(applicationContext, result.toString(), Toast.LENGTH_SHORT).show()
             }
 
 
@@ -68,12 +69,16 @@ class MainActivity : AppCompatActivity() {
             if (isChecked) {
                 result.append("\njajka 7zł")
                 totalAmount += 7
+                result.append("\nRazem " + totalAmount + "zł")
+                Toast.makeText(applicationContext, result.toString(), Toast.LENGTH_SHORT).show()
             }
         }
         kawa.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
                 result.append("\nKawa 12zł")
                 totalAmount += 12
+                result.append("\nRazem " + totalAmount + "zł")
+                Toast.makeText(applicationContext, result.toString(), Toast.LENGTH_SHORT).show()
             }
 
         }
