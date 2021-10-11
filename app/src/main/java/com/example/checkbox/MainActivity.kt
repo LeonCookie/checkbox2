@@ -30,18 +30,18 @@ class MainActivity : AppCompatActivity() {
             val result = StringBuilder()
             result.append("Wybrane przedmioty")
             if(mleko.isChecked){
-                result.append("\nMleko 50")
-                totalAmount += 50
+                result.append("\nMleko 3zł")
+                totalAmount += 3
             }
             if(jajka.isChecked){
-                result.append("\njajka 75")
-                totalAmount += 75
+                result.append("\njajka 7zł")
+                totalAmount += 7
             }
             if(kawa.isChecked){
-                result.append("\nKawa 100")
-                totalAmount += 100
+                result.append("\nKawa 12zł")
+                totalAmount += 12
             }
-            result.append("\nTotal: " + totalAmount + "Rs")
+            result.append("\nRazem " + totalAmount + "zł")
             Toast.makeText(applicationContext, result.toString(), Toast.LENGTH_SHORT).show()
         }
 
